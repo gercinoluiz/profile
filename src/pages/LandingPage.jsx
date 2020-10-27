@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     width: "5vw",
     height: "100vh",
     position: "fixed",
-    marginTop:"50px"
+    marginTop:"20px"
   },
 
   landingGrid: {
