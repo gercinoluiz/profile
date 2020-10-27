@@ -10,7 +10,6 @@ import {
   Typography,
 } from "@material-ui/core/";
 
-
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
@@ -54,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     width: "5vw",
     height: "100vh",
     position: "fixed",
-    marginTop:"20px"
+    marginTop: "20px",
   },
 
   landingGrid: {
@@ -117,7 +116,13 @@ const useStyles = makeStyles((theme) => ({
     margin: "5px",
     display: "flex",
     justifyContent: "center",
+    textJustify: "C=center",
     alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "370px",
+      height: "690px",
+      marginLeft: "1px",
+    },
   },
 
   paperGrid: {
@@ -128,6 +133,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "3em",
     marginTop: "50px",
     marginBottom: "20px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.8em",
+    },
   },
 
   WhatIKnowGrid: {},
@@ -136,6 +144,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     marginRight: "10px",
     marginLeft: "15px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "25px",
+    },
   },
   ///-------------------!!!!
   WhatIknowCard: {
@@ -223,8 +234,7 @@ export default function LandingPage() {
         direction="column"
         className={classes.landingGrid}
       >
-        <Grid item className={classes.gridPhoto}>
-        </Grid>{" "}
+        <Grid item className={classes.gridPhoto}></Grid>{" "}
         <Grid item className={classes.infoGrid}>
           <Typography className={classes.helloTypography}>
             Hello, I'm <strong>Gercino Luiz.</strong>
@@ -241,13 +251,14 @@ export default function LandingPage() {
           <Paper elevation={2} className={classes.paper}>
             <Grid
               container
-              direction="column"
+              direction="row"
+              justify="center"
               style={{ height: "100%" }}
-              alignItems="center"
             >
               <Typography id="WhoIam" className={classes.titleTypograph}>
                 Who I am.
               </Typography>
+
               <Typography className={classes.whoIam}>
                 A learning lover, who wants to change the world somehow and make
                 others lives better through my code. I've always sought jobs and
@@ -272,7 +283,6 @@ export default function LandingPage() {
                 <Grid container justify="space-evenly">
                   <Grid item>
                     <Grid
-                  
                       item
                       container
                       direction="column"
@@ -299,7 +309,6 @@ export default function LandingPage() {
 
                   <Grid item>
                     <Grid
-                   
                       item
                       container
                       direction="column"
@@ -332,7 +341,6 @@ export default function LandingPage() {
 
                   <Grid item>
                     <Grid
-                     
                       item
                       container
                       direction="column"
@@ -371,7 +379,6 @@ export default function LandingPage() {
                   <Grid container justify="space-evenly">
                     <Grid item>
                       <Grid
-                       
                         item
                         container
                         direction="column"
@@ -388,7 +395,6 @@ export default function LandingPage() {
 
                     <Grid item>
                       <Grid
-                     
                         item
                         container
                         direction="column"
@@ -405,7 +411,6 @@ export default function LandingPage() {
 
                     <Grid item>
                       <Grid
-                      
                         item
                         container
                         direction="column"
@@ -422,7 +427,6 @@ export default function LandingPage() {
 
                     <Grid item>
                       <Grid
-                 
                         item
                         container
                         direction="column"

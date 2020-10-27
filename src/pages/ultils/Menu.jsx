@@ -80,7 +80,7 @@ export default function Menus() {
             <a
               style={{ textDecoration: "none" }}
               target={
-                menuItem.name === "My CV" || "GitHub" || "LinkedIn"
+                menuItem.name === "My CV"
                   ? "_blank"
                   : null
               }
