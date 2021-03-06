@@ -33,10 +33,19 @@ import { SiTypescript } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiMaterialUi } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
+import { FaDocker } from "react-icons/fa";
+import { SiPostgresql } from "react-icons/si";
+import { FaCheck } from "react-icons/fa";
+
+
+
+
+
 
 // My things
 import Menus from "./ultils/Menu";
-import profilephoto from "../images/profile.png";
+import profilephoto from "../images/profile.jpeg";
 import myServicesImg from "../images/myServices.png";
 import findAnOrphanage from "../images/orphanages.png";
 
@@ -433,6 +442,39 @@ export default function LandingPage() {
                         alignItems="center"
                         justify="center"
                       >
+                        <DiRedis
+                          className={classes.miniIconPaper}
+                          style={{ color: "#d63031" }}
+                        />{" "}
+                        <strong>Redis</strong>
+                      </Grid>
+                    </Grid>
+
+                    <Grid item>
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                      >
+                        <FaDocker
+                          className={classes.miniIconPaper}
+                          style={{ color: '#0984e3'}}
+                        />{" "}
+                        <strong>Docker</strong>
+                      </Grid>
+                    </Grid>
+
+
+                    <Grid item>
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                      >
                         <SiCss3
                           className={classes.miniIconPaper}
                           style={{ color: "#3080DE" }}
@@ -442,9 +484,80 @@ export default function LandingPage() {
                     </Grid>
                   </Grid>
                 </Grid>
+
+
+                {/* /*---------------------- */}
+
+
+                <Grid container direction="column" alignItems="center">
+                  {/* <img className={classes.imageCode} src={mern}></img> */}
+
+                  <Grid container justify="space-evenly">
+                   
+                    <Grid item>
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                      >
+                        <SiPostgresql
+                          style={{ color: "#2475B0" }}
+                          className={classes.miniIconPaper}
+                        />
+                        <strong>Postgres</strong>
+                      </Grid>
+                    </Grid>
+
+                    <Grid item>
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                      >
+                           <FaCheck
+                          className={classes.miniIconPaper}
+                          style={{ color: '#00b894' }}
+                        />{" "}
+                        <strong>Repository Pattern</strong>
+                      </Grid>
+                    </Grid>
+
+                    <Grid item>
+                      <Grid
+                        item
+                        container
+                        direction="column"
+                        alignItems="center"
+                        justify="center"
+                      >
+                        <FaCheck
+                          className={classes.miniIconPaper}
+                          style={{ color: '#00b894' }}
+                        />{" "}
+                        <strong>Agile</strong>
+                      </Grid>
+                    </Grid>
+
+              
+
+
+                
+                    
+                  </Grid>
+                </Grid>
               </CardContent>
+
+
+
             </Collapse>
           </Card>
+
+
+          
           {/* End Of the card Thing */}
           <Grid container direction="column" alignItems="center">
             <Typography id="WhatIdid" className={classes.titleTypograph}>
